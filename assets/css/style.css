@@ -1,3 +1,6 @@
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/*This section affects the entire webpage */
 :root {
     --dark:#31343D;
     --light:#92CCCD ;
@@ -9,9 +12,9 @@
     color: #31343D;
     }
     
-
-    
-    /* MAIN HEADER  */
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* Main Header Section */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +36,7 @@ h1 {
 nav {
     margin-right: 50px;   
     }
-    
+/* "`-._,-' Navigation Links`-._,-'"*/ 
  nav a {
     color: var(--light);
     font-size: 20px;
@@ -43,9 +46,9 @@ nav {
     border-bottom: 5px solid #92CCCD;
     margin-right: 5px;
     }
-    
-    
-    /* PICTURE WITH SUBTITLE */
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* Header background image with "Cool Subtitle" */
 figure {
     position: relative;
     height: 200px;
@@ -63,13 +66,14 @@ figure {
     bottom: 20px;
     padding: 5px;
     }
-    
-    
-    /* BODY OF PAGE - ABOUT ME & WORK */
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* Main body of webpage. Includes: About Me and Work with clickable links */
 main {
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
     background-color: #edffff;
     }
     
@@ -102,7 +106,7 @@ main {
     }
     
     
-/* TITLES SHOWING ON LEFT */
+/* "`-._,-' Large blue titles on left of page`-._,-'"*/ 
 .main-titles {
     color: var(--titles);
     font-size: 45px;
@@ -111,12 +115,12 @@ main {
     padding: 5px 20px;
     }
     
-/* CONTENT SHOWING ON RIGHT */
+/* Main content shows to the right of large titles*/ 
 .content {
     border-left: 4px solid var(--titles);
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 40px;
+    padding: 10px 10px;
     width: 75%;
     }
     
@@ -128,38 +132,31 @@ main {
 #work{
 }
 
+/* Main project (shows largest at top of 'Work' section*/ 
+/* includes grayscale on images*/ 
 .big-img {
     background-image: url("../images/Horiseon\ Website.png");
+    filter: grayscale(75%);
+    -webkit-filter:grayscale(75%);
     background-size:cover;
     height: 600px;
     width: 100%;
     border: 8px solid var(--light);
     margin-bottom: 1%;
-    position: relative;        
+    position: relative;      
     }
+
     
 .small-img {
     background-size: cover;
     height: 200px;
-    width: 49%;
+    width: 50%;
     border: 8px solid var(--light);
     margin: 1% 0;
     position: relative;
+    filter: grayscale(75%);
     }
 
-#ledwall {
-    background-image: url(../images/LED\ Lights.png);
-}
-#calculator {
-    background-image: url(../images/Calculator.png);
-}
-#puzzle {
-    background-image: url(../images/Puzzle.png);
-}
-#run-buddy {
-    background-image: url(../images/Run-buddy.png);
-}
-    
 h3 {
     font-size: 25px;
     font-weight: bold;
@@ -176,7 +173,9 @@ h3 {
     }
     
     
-/* FOOTER - CONTACT ME */
+ /* `-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+ /* `-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+ /* Footer Section with Contact Me information */
 #contact  a {
     color: var(--titles);
     border-bottom: 4px solid var(--titles);
@@ -188,7 +187,19 @@ h3 {
     }
 
 
-@media screen and (max-width:786px) {
+/* "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+/* Pseudo Class removes grayscale when photo links are hovered with mouse */
+
+a:hover {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0); 
+    }
+
+ /* `-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+ /* `-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-' */
+ /* Media Queries that will adjust the content when screen is smaller */
+
+@media screen and (max-width:992px) {
     .main-titles {
         width: 100%;
         text-align: left;
@@ -196,9 +207,7 @@ h3 {
     footer {
         justify-content: none;
     }
-    p {
-        text-align: center;
-    }
+   
     .small-img {
         width: 50%;
     }
@@ -211,6 +220,11 @@ h3 {
     main {
         width: 100%;
     }
+    .content {
+        border-left: none;
+        border-top: 4px solid var(--titles);
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -221,5 +235,19 @@ h3 {
         width: 100%;
         height: 200px;
     }
+    #contact {
+        flex-direction: column;
+        align-items: flex-start;
     }
-  }
+    nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+     }
+    header {
+        height: 200px;
+        width: 100%;
+    }
+    }
+  
+
