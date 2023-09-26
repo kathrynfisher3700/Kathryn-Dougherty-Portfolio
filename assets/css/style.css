@@ -1,0 +1,173 @@
+:root {
+    --dark:#31343D;
+    --light:#92CCCD ;
+    --titles:#445876 ;
+    }
+    
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    color: #31343D;
+    }
+    
+
+    
+    /* MAIN HEADER  */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--dark) ;
+    padding: 10px 0px;
+    height: 100px;
+    }
+    
+h1 {
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 60px;
+    }
+    
+nav {
+    margin-right: 50px;   
+    }
+    
+ nav a {
+    color: var(--light);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 5px 10px;
+    border-bottom: 5px solid #92CCCD;
+    margin-right: 5px;
+    }
+    
+    
+    /* PICTURE WITH SUBTITLE */
+figure {
+    position: relative;
+    height: 200px;
+    background-image: url("../images/Screenshot\ 2023-09-24\ 134144.png");
+    background-size:cover;
+    }
+    
+.cool-subtitle {
+    background-color: var(--light);
+    color:var(--dark);
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;    
+    right:90px;
+    bottom: 20px;
+    padding: 5px;
+    }
+    
+    
+    /* BODY OF PAGE - ABOUT ME & WORK */
+main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #edffff;
+    }
+    
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 25px 0px;
+    width: 100%;
+    }
+    
+.space-between {
+    justify-content: space-between;
+    }
+    
+.space-even {
+    justify-content: space-evenly;
+    }
+
+.align-center {
+    align-items: center;
+    }
+    
+.column-direction {
+    flex-direction: column;
+    }
+    
+.row-direction {
+    flex-direction: row;
+    }
+    
+    
+/* TITLES SHOWING ON LEFT */
+.main-titles {
+    color: var(--titles);
+    font-size: 45px;
+    text-align: right;
+    width: 20%;
+    padding: 5px 20px;
+    }
+    
+/* CONTENT SHOWING ON RIGHT */
+.content {
+    border-left: 4px solid var(--titles);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    width: 75%;
+    }
+    
+#about-me {
+    font-size: 16px ;
+    line-height: 1.5;
+    }
+    
+.big-img {
+    background-image: url(../images/view-blue-wood-texture.jpg);
+    background-size:cover;
+    height: 600px;
+    width: 100%;
+    border: 8px solid var(--light);
+    margin-bottom: 1%;
+    position: relative;        
+    }
+    
+.small-img {
+    background-image: url(../images/view-blue-wood-texture.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 49%;
+    border: 8px solid var(--light);
+    margin: 1% 0;
+    position: relative;
+    }
+    
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+    }
+    
+.img-label {
+    background-color: var(--light);
+    color:var(--dark);
+    position: absolute;
+    left: 0px;
+    bottom: 18px;
+    padding: 1%;
+    }
+    
+    
+/* FOOTER - CONTACT ME */
+#contact  a {
+    color: var(--titles);
+    border-bottom: 4px solid var(--titles);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 5px 10px;
+    margin-right: 5px;
+    }
