@@ -131,13 +131,16 @@ main {
 
 .big-img {
     background-image: url("../images/Horiseon\ Website.png");
+    filter: grayscale(75%);
+    -webkit-filter:grayscale(100%);
     background-size:cover;
     height: 600px;
     width: 100%;
     border: 8px solid var(--light);
     margin-bottom: 1%;
-    position: relative;        
+    position: relative;      
     }
+
     
 .small-img {
     background-size: cover;
@@ -146,21 +149,9 @@ main {
     border: 8px solid var(--light);
     margin: 1% 0;
     position: relative;
+    filter: grayscale(75%);
     }
 
-#ledwall {
-    background-image: url(../images/LED\ Lights.png);
-}
-#calculator {
-    background-image: url(../images/Calculator.png);
-}
-#puzzle {
-    background-image: url(../images/Puzzle.png);
-}
-#run-buddy {
-    background-image: url(../images/Run-buddy.png);
-}
-    
 h3 {
     font-size: 25px;
     font-weight: bold;
@@ -186,6 +177,14 @@ h3 {
     font-weight: 200;
     padding: 5px 10px;
     margin-right: 5px;
+    }
+
+
+
+
+    a:hover {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0); 
     }
 
 
@@ -240,3 +239,4 @@ h3 {
     }
     }
   
+
