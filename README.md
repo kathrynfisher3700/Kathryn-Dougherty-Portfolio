@@ -10,7 +10,7 @@ Welcome to my portfolio. Here you can explore my skills and talents through curr
 
 👋 To friends, family, and explorers: I'm open for feedback, questions, and collaboration!
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
