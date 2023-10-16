@@ -129,13 +129,10 @@ main {
     line-height: 1.75;
     }
 
-#work{
-}
-
 /* Main project (shows largest at top of 'Work' section*/ 
 /* includes grayscale on images*/ 
 .big-img {
-    background-image: url("../images/Horiseon\ Website.png");
+    background-image: url("../images/SongSafari2.png");
     filter: grayscale(75%);
     -webkit-filter:grayscale(75%);
     background-size:cover;
