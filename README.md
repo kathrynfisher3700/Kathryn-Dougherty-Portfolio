@@ -5,7 +5,7 @@
 
 Welcome to my portfolio. Here you can explore my skills and talents through current projects.
 
-👋 To future employers: This website and included projects were built during an intensive UCF Coding Bootcamp.
+👋 To future employers: This website and included projects were built during an intensive UCF Coding Bootcamp (Sept-Dec 2023).
  If this is what I can accomplish in only *3-months*, imagine the potential that awaits your company.
 
 👋 To friends, family, and explorers: I'm open for feedback, questions, and collaboration!
